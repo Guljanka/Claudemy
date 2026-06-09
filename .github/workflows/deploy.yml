@@ -7,7 +7,7 @@ on:
 env:
   ECS_CLUSTER: student-cluster
   ECS_SERVICE: student-task-service
-  IMAGE_TAG: latest
+  IMAGE_TAG: v4
 
 jobs:
   deploy:

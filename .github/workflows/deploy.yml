@@ -26,9 +26,9 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          IMAGE_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}
-          docker build --platform linux/amd64 -t "$IMAGE_URI" .
-          docker push "$IMAGE_URI"
+          docker build --platform linux/amd64 -t student-website:latest .
+          docker tag student-website:latest 851771533724.dkr.ecr.us-east-1.amazonaws.com/student-website:latest
+          docker push 851771533724.dkr.ecr.us-east-1.amazonaws.com/student-website:latest
 
       - name: Force ECS deployment
         run: |

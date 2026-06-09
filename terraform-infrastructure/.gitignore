@@ -1,0 +1,7 @@
+*.png
+*.jpg
+*.jpeg
+.terraform/
+terraform.tfstate*
+terraform.tfvars
+../Screenshot*.png

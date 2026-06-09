@@ -23,7 +23,7 @@ export default function Home() {
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <FadeIn>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-              HopeBridge Foundation
+              HopeBridge Foundation - Version 2
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>

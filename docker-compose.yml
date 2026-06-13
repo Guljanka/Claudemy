@@ -1,0 +1,12 @@
+services:
+  website:
+    image: my-website:v2
+    container_name: my-website-compose
+    ports:
+      - "8081:80"
+
+  redis:
+    image: redis:latest
+    container_name: redis-compose
+    ports:
+      - "6379:6379"
